@@ -1,10 +1,10 @@
 <div class="container-fluid">
-    <div class="row"> 
-        
+    <div class="row">
+
         <a href="/admin/add" class="btn btn-success m-auto">Add-Products</a>
-       
+
         <div class="col-md-12">
-           
+
             <table class="table  mt-5" style="text-align: center;">
                 <thead class="">
                     <tr>
@@ -16,14 +16,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {{#each products}}
+                    {{#each data}}
                     <tr>
 
                         <td>{{@index}}</td>
-                        <td>{{this.name}}</td>
-                        <td>{{this.disc}}</td>
+                        <td>{{this.Name}}</td>
+                        <td>{{this.discription}}</td>
                         <td>{{this.price}}</td>
-                        <td><img src="{{this.image}}" alt="" style="width: 200px; height: 200px;"></td>
+                        <td><img src="/uploded-image/{{this._id}}.jpg" alt="" style="width: 200px; height: 200px;"></td>
 
 
                     </tr>
