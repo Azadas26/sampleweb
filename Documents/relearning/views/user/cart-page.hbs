@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Discription</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each cartpro}}
+                    <tr>
+
+                        <td>{{@index}}</td>
+                        <td>{{this.Name}}</td>
+                        <td>{{this.Discription}}</td>
+                        <td>{{this.Price}}</td>
+                        <td><img src="/admin_image/{{this._id}}.jpg" style="width: 200px; height: 200px;" alt=""></td>
+                        <td>
+                            <button class="mt-5 m-2" style="border-radius: 20px;">+</button> 3 <button class="mt-5 m-2"
+                                style="border-radius: 20px;">-</button>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
